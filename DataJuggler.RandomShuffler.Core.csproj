@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>This is a direct port of RandomShuffler for Dot Net Framework. Everything should work the same.
+
+I am starting with the same version the Dot Net Framework was at, but since this is the first version for Dot Net Core, use with caution.</Description>
+    <Copyright>2019 DataJuggler - Use As Is Do Whatever you Want</Copyright>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/DataJuggler/RandomShuffler.Core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/DataJuggler/RandomShuffler.Core.git</RepositoryUrl>
+    <PackageTags>C#, Random Numbers, Shuffle, Shuffler</PackageTags>
+    <PackageReleaseNotes>This is the first release for Dot Net Core. I am building a site called BlazorAnimations as a demo, and I needed this available for Dot Net Core.</PackageReleaseNotes>
+    <AssemblyVersion>1.2.4.0</AssemblyVersion>
+    <FileVersion>1.2.4.0</FileVersion>
+    <Version>1.2.4</Version>
+    <Company>DataJuggler</Company>
+    <Authors>DataJuggler</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DataJuggler.UltimateHelper.Core" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="License\License.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
