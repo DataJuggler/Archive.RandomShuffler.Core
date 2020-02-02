@@ -1,26 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFrameworks>netstandard2.1;netcoreapp3.1</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>This is a direct port of RandomShuffler for Dot Net Framework. Everything should work the same.
 
-I am starting with the same version the Dot Net Framework was at, but since this is the first version for Dot Net Core, use with caution.</Description>
+    I am starting with the same version the Dot Net Framework was at, but since this is the first version for Dot Net Core, use with caution.</Description>
     <Copyright>2019 DataJuggler - Use As Is Do Whatever you Want</Copyright>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/DataJuggler/RandomShuffler.Core</PackageProjectUrl>
     <RepositoryUrl>https://github.com/DataJuggler/RandomShuffler.Core.git</RepositoryUrl>
     <PackageTags>C#, Random Numbers, Shuffle, Shuffler</PackageTags>
-    <PackageReleaseNotes>This is the first release for Dot Net Core. I am building a site called BlazorAnimations as a demo, and I needed this available for Dot Net Core.</PackageReleaseNotes>
-    <AssemblyVersion>1.2.4.0</AssemblyVersion>
-    <FileVersion>1.2.4.0</FileVersion>
-    <Version>1.2.4</Version>
+    <PackageReleaseNotes>Version 1.2.5 I changed from targeting Dot Net Core 3.0, to Net Core 3.1, .Net Standard2.1
+
+This is the first release for Dot Net Core. I am building a site called BlazorAnimations as a demo, and I needed this available for Dot Net Core.</PackageReleaseNotes>
+    <AssemblyVersion>1.2.5.0</AssemblyVersion>
+    <FileVersion>1.2.5.0</FileVersion>
+    <Version>1.2.5</Version>
     <Company>DataJuggler</Company>
     <Authors>DataJuggler</Authors>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DataJuggler.UltimateHelper.Core" Version="1.1.0" />
+    <PackageReference Include="DataJuggler.UltimateHelper.Core" Version="1.2.0" />
   </ItemGroup>
 
   <ItemGroup>
