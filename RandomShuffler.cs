@@ -31,7 +31,7 @@ namespace DataJuggler.RandomShuffler.Core
     /// For Integers you must set the MinValue and MaxValue and the SetsToFill property, see the Sample project ThreeDoorsGame
     /// located in the 'Samples' folder for a working example.
     ///</summary>
-    public class RandomShuffler
+    public class RandomShuffler : IDisposable
     {
 
         #region Private Variables
@@ -144,6 +144,20 @@ namespace DataJuggler.RandomShuffler.Core
             }
             #endregion
 
+            #region Dispose()
+            /// <summary>
+            /// method Dispose
+            /// </summary>
+            public void Dispose()
+            {
+                // destroy the lists and objects that might be created
+                randomIntStorage = null;
+                randomCardStorage = null;
+                cardValueManager = null;
+                shuffleOptions = null;
+            }
+            #endregion
+            
             #region GetCardName(int cardNumber)
             /// <summary>
             /// This method returns the Card Name for the cardNumber.
@@ -495,12 +509,12 @@ namespace DataJuggler.RandomShuffler.Core
                     this.RandomIntStorage = ShuffleHelper.Shuffle<int>(this.RandomIntStorage);
                 }                
             }
-            #endregion
-            
+        #endregion
+
         #endregion
 
         #region Properties
-            
+
             #region CardValueManager
             /// <summary>
             /// This property gets or sets the value for 'CardValueManager'.
